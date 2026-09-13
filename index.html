@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radhika Farm House</title>
+  <meta name="description" content="Welcome to our beautiful farmhouse.">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;color:#243126;background:#f7f5ef;line-height:1.6}
+    nav{position:fixed;top:0;left:0;right:0;z-index:10;background:rgba(20,32,24,.92);backdrop-filter:blur(8px);padding:15px 6%}
+    nav .navin{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between}
+    .brand{color:#fff;text-decoration:none;font-size:21px;font-weight:700;letter-spacing:.5px}
+    nav a{color:#fff;text-decoration:none;margin-left:24px;font-size:14px}
+    .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;
+      background:linear-gradient(rgba(0,0,0,.38),rgba(0,0,0,.38)),url("photo1.jpeg") center/cover}
+    .hero-content{color:white;padding:110px 20px 60px}
+    .hero h1{font-size:clamp(44px,8vw,82px);line-height:1.05;margin-bottom:18px;text-shadow:0 3px 20px #000}
+    .hero p{font-size:clamp(18px,2.5vw,25px);margin-bottom:30px}
+    .btn{display:inline-block;background:#d9a441;color:#172218;padding:13px 24px;border-radius:30px;text-decoration:none;font-weight:700}
+    section{padding:85px 6%;max-width:1200px;margin:auto}
+    .title{text-align:center;margin-bottom:45px}
+    .title h2{font-size:38px;margin-bottom:8px}
+    .title p{color:#687267}
+    .about{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
+    .about img{width:100%;max-height:560px;object-fit:cover;border-radius:24px;box-shadow:0 15px 40px rgba(0,0,0,.12)}
+    .about h3{font-size:32px;margin-bottom:14px}
+    .about p{font-size:17px;color:#536056}
+    .owner{background:#eae6da}
+    .owner-card{display:grid;grid-template-columns:300px 1fr;gap:40px;align-items:center;max-width:850px;margin:auto;background:white;padding:28px;border-radius:25px;box-shadow:0 12px 35px rgba(0,0,0,.08)}
+    .owner-card img{width:100%;height:330px;object-fit:cover;border-radius:18px}
+    .owner-card h3{font-size:30px;margin-bottom:12px}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .gallery img{width:100%;height:260px;object-fit:cover;border-radius:18px;cursor:pointer;transition:.25s;box-shadow:0 7px 20px rgba(0,0,0,.08)}
+    .gallery img:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(0,0,0,.14)}
+    .contact{background:#17261c;color:white;max-width:none}
+    .contact-inner{max-width:1200px;margin:auto;text-align:center;padding:0 6%}
+    .contact p{color:#cbd4cd;margin:10px 0 25px}
+    footer{text-align:center;background:#101a13;color:#aeb8b0;padding:22px}
+    .lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:99;align-items:center;justify-content:center;padding:30px}
+    .lightbox img{max-width:95%;max-height:90vh;border-radius:10px}
+    .close{position:absolute;top:15px;right:25px;color:white;font-size:42px;cursor:pointer}
+    @media(max-width:800px){
+      nav .navin{display:block;text-align:center}
+      nav a{margin:0 7px;font-size:12px}
+      .brand{display:block;margin-bottom:8px}
+      .about,.owner-card{grid-template-columns:1fr}
+      .gallery{grid-template-columns:1fr 1fr}
+      .owner-card img{height:360px}
+    }
+    @media(max-width:520px){.gallery{grid-template-columns:1fr}.hero h1{font-size:48px}}
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="navin">
+    <a class="brand" href="#home">RADHIKA FARM HOUSE</a>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#owner">Owner</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p>WELCOME TO</p>
+    <h1>Radhika Farm House</h1>
+    <p>A peaceful farmhouse surrounded by nature</p>
+    <a class="btn" href="#gallery">Explore Photos</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="title">
+    <h2>About Our Farmhouse</h2>
+    <p>Relax, enjoy nature and spend quality time.</p>
+  </div>
+  <div class="about">
+    <img src="photo2.jpeg" alt="Farmhouse entrance">
+    <div>
+      <h3>A Place to Feel at Home</h3>
+      <p>
+        Welcome to our farmhouse. Radhika Farm House is surrounded by
+        greenery, trees and open space. It is a peaceful place for family,
+        friends and memorable moments.
+      </p>
+      <br>
+      <p>
+        Located at Raipur, Dahegam–Naroda Road, Radhika Farm House offers a peaceful place to relax and enjoy nature.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="owner" id="owner">
+  <div class="title">
+    <h2>Meet the Owner</h2>
+    <p>The person behind this beautiful place.</p>
+  </div>
+  <div class="owner-card">
+    <img src="photo6.jpeg" alt="Owner">
+    <div>
+      <h3>Umesh Patel</h3>
+      <p>
+        Welcome to our farmhouse. We are happy to share this peaceful place
+        with our guests, family and friends.
+      </p>
+      <br>
+      <p><strong>Replace “Umesh Patel” with the real owner's name.</strong></p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="title">
+    <h2>Farmhouse Gallery</h2>
+    <p>Take a look around the property.</p>
+  </div>
+  <div class="gallery">
+    <img src="photo1.jpeg" alt="Farmhouse" onclick="openImg(this.src)">
+    <img src="photo2.jpeg" alt="Farmhouse entrance" onclick="openImg(this.src)">
+    <img src="photo3.jpeg" alt="Farmhouse garden" onclick="openImg(this.src)">
+    <img src="photo4.jpeg" alt="Farmhouse pool area" onclick="openImg(this.src)">
+    <img src="photo5.jpeg" alt="Farmhouse sitting area" onclick="openImg(this.src)">
+    <img src="photo1.jpeg" alt="Farmhouse exterior" onclick="openImg(this.src)">
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div class="title">
+      <h2>Contact Us</h2>
+      <p>Raipur, Dahegam–Naroda Road</p>
+    </div>
+    <!-- Replace the number below with the owner's WhatsApp number -->
+    <a class="btn" href="https://wa.me/91XXXXXXXXXX" target="_blank">WhatsApp Owner</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Radhika Farm House • All rights reserved
+</footer>
+
+<div class="lightbox" id="lightbox" onclick="closeImg()">
+  <span class="close">&times;</span>
+  <img id="bigImg" src="" alt="Farmhouse photo">
+</div>
+
+<script>
+  function openImg(src){
+    document.getElementById("bigImg").src = src;
+    document.getElementById("lightbox").style.display = "flex";
+  }
+  function closeImg(){
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
